@@ -465,7 +465,10 @@ app.post("/api/generate-pdf", async (req, res) => {
     const fileName = `seating-${Date.now()}.pdf`;
     const outputPath = path.join(GENERATED_DIR, fileName);
 
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({ 
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
     const page = await browser.newPage();
     await page.setContent(html, { waitUntil: "networkidle0" });
     await page.pdf({
