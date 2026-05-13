@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node backend/server.js",
     "dev": "node backend/server.js",
-    "install-browser": "puppeteer browsers install chrome"
+    "postinstall": "node node_modules/puppeteer/install.mjs"
   },
   "keywords": [
     "exam",
