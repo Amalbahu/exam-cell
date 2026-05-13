@@ -91,12 +91,21 @@
         width: 36px;
         height: 36px;
         background: #213f73;
-        color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 18px;
         flex-shrink: 0;
+        padding: 8px;
+      }
+
+      .home-link-icon svg {
+        width: 20px;
+        height: 20px;
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
       }
 
       .home-link-text strong {
@@ -127,14 +136,24 @@
 
         <div class="home-links">
           <a href="frontend/seat-search.html" class="home-link">
-            <div class="home-link-icon">🔍</div>
+            <div class="home-link-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="7"/>
+                <line x1="16.5" y1="16.5" x2="22" y2="22"/>
+              </svg>
+            </div>
             <div class="home-link-text">
               <strong>Student Seat Search</strong>
               <small>Find your assigned seat by registration number</small>
             </div>
           </a>
           <a href="frontend/admin.html" class="home-link">
-            <div class="home-link-icon">🔐</div>
+            <div class="home-link-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="11" width="14" height="11" rx="1"/>
+                <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+              </svg>
+            </div>
             <div class="home-link-text">
               <strong>Admin Login</strong>
               <small>Upload excel, create exam and generate seating</small>
