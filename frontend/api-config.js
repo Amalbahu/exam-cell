@@ -1,7 +1,2 @@
-/*
-  Set backend URL here.
-  1) Local run (same server): keep ""
-  2) GitHub Pages + backend on Render:
-     set to "https://your-app.onrender.com"
-*/
-window.API_BASE = "";
+// api url 
+window.API_BASE = "https://exam-cell-tuhn.onrender.com";
